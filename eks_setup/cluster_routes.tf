@@ -23,10 +23,10 @@ resource "aws_route_table_association" "private_zone2" {
 
 resource "aws_route_table_association" "public_zone1" {
   subnet_id      = aws_subnet.public_zone1.id
-  route_table_id = data.aws_route_table.public_rote_table.id
+  route_table_id = data.aws_route_table.public_route_table.id
 }
 
 resource "aws_route_table_association" "public_zone2" {
   subnet_id      = aws_subnet.public_zone2.id
-  route_table_id = data.aws_route_table.public_rote_table.id
+  route_table_id = data.aws_route_table.public_route_table.id
 }

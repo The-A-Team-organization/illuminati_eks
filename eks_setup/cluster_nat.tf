@@ -13,6 +13,4 @@ resource "aws_nat_gateway" "nat" {
   tags = {
     Name = "${var.environment_name}-${var.eks_cluster_name}-nat"
   }
-
-  depends_on = [data.aws_route_table.public_rote_table]
 }

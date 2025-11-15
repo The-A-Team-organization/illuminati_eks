@@ -4,7 +4,7 @@ data "aws_vpc" "vpc_id" {
   }
 }
 
-data "aws_route_table" "public_rote_table" {
+data "aws_route_table" "public_route_table" {
   tags = {
     Name = "public_route_table_dev"
   }
