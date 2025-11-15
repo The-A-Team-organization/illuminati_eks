@@ -4,7 +4,10 @@ provider "aws" {
 
 provider "helm" {
   kubernetes = {
-    config_path = "~/.kube/config" # Path to the kubeconfig file
+    host                   = var.cluster_endpoint
+    cluster_ca_certificate = var.cluster_certificate_authority
+    token                  = var.cluster_token
+    load_config_file       = false
   }
 }
 

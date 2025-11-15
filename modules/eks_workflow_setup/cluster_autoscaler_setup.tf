@@ -73,7 +73,6 @@ resource "helm_release" "cluster_autoscaler" {
     name  = ".Values.serviceAccount"
     value = aws_eks_pod_identity_association.cluster_autoscaler.service_account
     },
-
     {
       name  = ".Values.clusterName"
       value = aws_eks_cluster.eks.name
