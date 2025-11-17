@@ -2,5 +2,5 @@
 
 development_varibles.tfvars
 .terraform
-helm/cluster_autoscaler
+helm/aws_lb_controller
 helm/ingress_controller

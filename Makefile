@@ -2,9 +2,9 @@
 init:
 	terraform init
 plan: init
-	terraform plan    -var-file=development_varibles.tfvars
+	terraform plan    
 
 apply: init
-	terraform apply   -var-file=development_varibles.tfvars
+	terraform apply   
 destroy: init
-	terraform destroy -var-file=development_varibles.tfvars
+	terraform destroy 
