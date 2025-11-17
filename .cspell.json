@@ -1,5 +1,16 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["eksbuild"]
+  "words": [
+    "eksbuild",
+    "persistentvolumes",
+    "poddisruptionbudgets",
+    "storageclasses",
+    "csinodes",
+    "csidrivers",
+    "csistoragecapacities",
+    "Nodegroup",
+    "volumeattachments",
+    "stderrthreshold"
+  ]
 }

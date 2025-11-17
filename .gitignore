@@ -1,1 +1,7 @@
 **/*.tfstate
+
+development_varibles.tfvars
+.terraform
+
+helm/ingress_controller/
+

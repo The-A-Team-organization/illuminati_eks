@@ -1,6 +1,7 @@
 provider "aws" {
-  region = "eu-central-1"
+  region = var.region
 }
+
 
 terraform {
   required_providers {
@@ -9,4 +10,5 @@ terraform {
       version = "6.14.1"
     }
   }
+
 }

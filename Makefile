@@ -2,9 +2,9 @@
 init:
 	terraform init
 plan: init
-	terraform plan 
+	terraform plan    
 
 apply: init
-	terraform apply 
+	terraform apply   
 destroy: init
-	terraform destroy
+	terraform destroy 
