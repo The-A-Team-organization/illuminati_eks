@@ -1,2 +1,2 @@
-# serviceAccountName: "cluster_autoscaler"
-# clusterName: "eks_cluster"
+serviceAccountName: "cluster_autoscaler"
+clusterName: "eks_cluster"
