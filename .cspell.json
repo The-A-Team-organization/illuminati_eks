@@ -9,6 +9,7 @@
     "csinodes",
     "csidrivers",
     "csistoragecapacities",
+    "Nodegroup",
     "volumeattachments",
     "stderrthreshold"
   ]
