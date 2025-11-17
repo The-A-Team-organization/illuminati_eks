@@ -89,8 +89,3 @@ variable "region" {
   description = "The region tag where our eks cluster will be deployed"
   type        = string
 }
-
-# variable "bucket" {
-#   description = "The bucket name where tfstate of our eks will be stored"
-#   type        = string
-# }
