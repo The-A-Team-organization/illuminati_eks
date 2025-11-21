@@ -12,10 +12,7 @@ apply: init
 destroy: init
 	terraform destroy 
 
-cert_manager_setup:
-	sleep 360
+nginx_crds_setup:
 	aws eks update-kubeconfig --region ${REGION} --name ${CLUSTER}
-	kubectl apply \
-    --validate=false \
-    -f https://github.com/jetstack/cert-manager/releases/download/v1.13.5/cert-manager.yaml
+	kubectl apply -f https://raw.githubusercontent.com/nginx/kubernetes-ingress/v5.2.1/deploy/crds.yaml
 	sleep 180
