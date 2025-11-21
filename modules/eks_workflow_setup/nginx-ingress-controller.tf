@@ -1,6 +1,6 @@
-resource "null_resource" "nginx_crds" {
+resource "null_resource" "nginx_crd" {
   provisioner "local-exec" {
-    command = "make nginx_crds_setup"
+    command = "make nginx_crd_setup"
     environment = {
       REGION  = join(" ", [var.region])
       CLUSTER = join(" ", [var.cluster_name])
@@ -26,7 +26,7 @@ resource "helm_release" "nginx_ingress_controller" {
   version    = "0.1.0"
   namespace  = "nginx-ingress"
 
-  depends_on = [null_resource.nginx_crds]
+  depends_on = [null_resource.nginx_crd]
 }
 
 output "helm_result" {

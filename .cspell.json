@@ -45,6 +45,14 @@
     "targetgroupbinding",
     "vtargetgroupbinding",
     "vingress",
-    "kubeconfig"
+    "kubeconfig",
+    "glog",
+    "virtualservers",
+    "virtualserverroutes",
+    "globalconfigurations",
+    "transportservers",
+    "ingresslinks",
+    "externaldns",
+    "dnsendpoints"
   ]
 }
